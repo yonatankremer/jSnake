@@ -1,0 +1,25 @@
+obj (abstract):
+    -x pos
+    -y pos
+
+node (extends obj):
+    -char to be displayed
+
+Snake:
+    -direction list
+    -move
+    -eat
+
+food (extends obj):
+    -different char to be displayed (that's why not in obj - needs to be static)
+    -passive basically
+
+board:
+    -border chars
+    -add snake to board
+    -add Food to board
+
+game:
+    -board
+    -snake
+    -get input using a non-blocking input as the first line in the main loop
